@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uma música para você </title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 35px 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      max-width: 450px;
+      width: 100%;
+    }
+    h2 {
+      color: #d6336c;
+      margin-top: 0;
+    }
+    p {
+      color: #444;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    button {
+      background: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: transform 0.2s, background 0.2s;
+    }
+    button:hover {
+      background: #e03e5c;
+      transform: scale(1.05);
+    }
+    #area-musica {
+      display: none;
+      margin-top: 25px;
+      text-align: left;
+      background: #fff0f3;
+      padding: 20px;
+      border-radius: 15px;
+      border-left: 4px solid #ff4d6d;
+    }
+    .titulo-musica {
+      font-weight: bold;
+      color: #d6336c;
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .letra {
+      white-space: pre-line;
+      color: #333;
+      font-style: italic;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- MENSAGEM INICIAL: Edite o título e o texto abaixo -->
+    <div id="inicio">
+      <h2>Oi, amor </h2>
+      <p>
+        Sei que estou começando a gostar de músicas agora. Graças a você. 
+        E por te amar tanto, fiz um esforcinho para montar algo que talvez goste.
+      </p>
+      <button onclick="mostrarMusica()">Clique para ler a letra </button>
+    </div>
+
+    <!-- LETRA DA MÚSICA: Edite o nome da música e cole a letra abaixo -->
+    <div id="area-musica">
+      <div class="titulo-musica">Suas mil músicas</div>
+      <div class="letra">
+        Por céus e mares, eu andei
+        Vi um poeta e vi um rei
+        Na esperança de saber o que é o amor
+
+        Quando vi você chegar
+        Você, eu arrumei toda a casa
+        Joguei fora as lembranças, que não servem mais pra nada
+
+        Vim aqui só pra dizer
+        Que o mundo sem você
+        Perde a razão de ser
+        Vim lhe dar meu coração
+        Agora sei quem sou
+        E devo tudo a você
+
+        Os seus olhos são espelhos d'água
+        Brilhando você, pra qualquer um
+        Por onde esse amor andava
+        Que não quis você de jeito algum
+        Que vontade de merecer
+        Um cantinho do seu olhar
+
+        Jaboticaba, teu olhar noturno
+        Beijo travoso de umbu, cajá
+        Pele macia, é carne de caju
+        Saliva doce, doce mel, mel de uruçu
+
+        Um girassol da cor de seu cabelo
+        O meu pensamento tem a cor de seu vestido
+        Ou um girassol que tem a cor de seu cabelo?
+        Você ainda quer morar comigo?
+
+        É madrugada no meu coração
+        Primeira luz rompe a escuridão
+        Vale a pena
+        Viver vale a pena
+
+        E eu acho que eu gosto mesmo de você
+        Bem do jeito que você é
+        Eu vou equalizar você
+        Numa frequência que só a gente sabe
+        Eu te transformei nessa canção
+        Pra poder te gravar em mim
+
+        Uni cada som que teu coração me deu,
+        Feito setembro desaguando em novembro.
+        E em ânsia, suplico:
+        Que este mar seja infinito,
+        E este amor vire a nossa própria gravidade.
+
+        Eu amo você.
+        
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarMusica() {
+      document.getElementById('inicio').style.display = 'none';
+      document.getElementById('area-musica').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
